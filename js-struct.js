@@ -262,23 +262,10 @@ var Struct = Object.create(Object, {
 			var parseFunc = new Function("arrayBuffer", "offset", "count", "callback", parseScript);
 			Object.defineProperty(struct, "readStructs", {
 				value: function () {
-					// console.log("==================================================")
-					// console.log(functionArguments)
-					// console.log(struct)
-					// console.log(struct.struct_type_id)
-					// console.log(Object.keys(struct))
-
 					var arrayBuffer = arguments[0];
 					var offset = arguments[1];
 					var count = arguments[2];
 					var callback = arguments[3];
-
-					// console.log(count)
-					// console.log(arrayBuffer)
-					// console.log(offset)
-
-					// console.log(this.byteLength)
-					// console.log("==================================================")
 
 					var a = new Array(count);
 					var s;
@@ -287,9 +274,7 @@ var Struct = Object.create(Object, {
 					for (var i = 0; i < count; ++i) {
 						so = o;
 
-						// write code
 						s = (function (o) {
-							// var st = Object.create(Struct[struct.struct_type_id]);
 							var st = Object.create(struct);
 
 							for (var i = 0; i < functionArguments.length; ++i) {
