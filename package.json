@@ -1,0 +1,18 @@
+{
+  "name": "js-struct",
+  "version": "0.8.0",
+  "description": "",
+  "main": "js-struct.js",
+  "files": [
+    "package.json",
+    "js-struct.js"
+  ],
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "devDependencies": {
+    "babel-cli": "6.22.2"
+  }
+}

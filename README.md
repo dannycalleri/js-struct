@@ -7,6 +7,15 @@ attempts to provide the same convenience in Javascript, in a reasonably efficien
 
 Better documentation should be forthcoming. Library currently supports reading only, will probably add write in the future.
 
+To install this fork, simply use npm
+
+    npm install https://github.com/dannycalleri/js-struct
+
+Then use Webpack or Browserify to import
+
+    import Struct from 'js-struct';
+
+
 Sample
 -------------
 
